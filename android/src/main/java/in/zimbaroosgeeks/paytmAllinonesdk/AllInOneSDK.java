@@ -15,7 +15,7 @@ import com.paytm.pgsdk.TransactionManager;
 
 @NativePlugin(requestCodes = {AllInOneSDKPlugin.REQ_CODE})
 
-public class AllInOneSDKPlugin extends Plugin {
+public class AllInOneSDK extends Plugin {
     protected static final int REQ_CODE = 0;
 
     @PluginMethod
