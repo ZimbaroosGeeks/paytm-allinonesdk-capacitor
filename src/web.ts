@@ -1,5 +1,5 @@
 import { WebPlugin } from '@capacitor/core';
-import { AllInOneSDKPlugin } from './definitions';
+import { AllInOneSDKPlugin, PaymentIntentModel, PaytmResponse } from './definitions';
 
 export class AllInOneSDKWeb extends WebPlugin implements AllInOneSDKPlugin {
   constructor() {
@@ -12,6 +12,13 @@ export class AllInOneSDKWeb extends WebPlugin implements AllInOneSDKPlugin {
   async echo(options: { value: string }): Promise<{ value: string }> {
     console.log('ECHO', options);
     return options;
+  }
+
+  async startTransaction(options : PaymentIntentModel): Promise<PaytmResponse> {
+    return {
+      message: 'plugin works!',
+      response: options.amount
+    }
   }
 }
 

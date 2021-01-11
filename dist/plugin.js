@@ -23,6 +23,14 @@ var capacitorPlugin = (function (exports, core) {
                 return options;
             });
         }
+        startTransaction(options) {
+            return __awaiter(this, void 0, void 0, function* () {
+                return {
+                    message: 'plugin works!',
+                    response: options.amount
+                };
+            });
+        }
     }
     const AllInOneSDK = new AllInOneSDKWeb();
     core.registerWebPlugin(AllInOneSDK);

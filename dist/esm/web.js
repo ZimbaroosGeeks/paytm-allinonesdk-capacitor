@@ -21,6 +21,14 @@ export class AllInOneSDKWeb extends WebPlugin {
             return options;
         });
     }
+    startTransaction(options) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return {
+                message: 'plugin works!',
+                response: options.amount
+            };
+        });
+    }
 }
 const AllInOneSDK = new AllInOneSDKWeb();
 export { AllInOneSDK };
