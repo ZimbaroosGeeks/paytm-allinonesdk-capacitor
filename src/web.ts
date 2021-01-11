@@ -1,26 +1,32 @@
 import { WebPlugin } from '@capacitor/core';
-import { AllInOneSDKPlugin, PaymentIntentModel, PaytmResponse } from './definitions';
+import { AllInOneSDKPluginPlugin, PaymentIntentModel, PaytmResponse } from './definitions';
 
-export class AllInOneSDKWeb extends WebPlugin implements AllInOneSDKPlugin {
+export class AllInOneSDKPluginWeb extends WebPlugin implements AllInOneSDKPluginPlugin {
   constructor() {
     super({
-      name: 'AllInOneSDK',
+      name: 'AllInOneSDKPlugin',
       platforms: ['web'],
     });
   }
 
-  async startTransaction(options: PaymentIntentModel): Promise<PaytmResponse> {
+  async echo(options: { value: string }): Promise<{ value: string }> {
+    console.log('ECHO', options);
+    return options;
+  }
+
+  async startTransaction(options : PaymentIntentModel): Promise<PaytmResponse> {
     console.log(options);
-    return {
-      message: 'This plugin will not work in browser platform.',
-      response: 'This plugin will not work in browser platform.'
-    }
+    let result: PaytmResponse = {
+      message: 'paytm web plugin works!',
+      response: 'paytm web plugin response'
+    };
+    return result;
   }
 }
 
-const AllInOneSDK = new AllInOneSDKWeb();
+const AllInOneSDKPlugin = new AllInOneSDKPluginWeb();
 
-export { AllInOneSDK };
+export { AllInOneSDKPlugin };
 
 import { registerWebPlugin } from '@capacitor/core';
-registerWebPlugin(AllInOneSDK);
+registerWebPlugin(AllInOneSDKPlugin);

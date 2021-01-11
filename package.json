@@ -1,7 +1,7 @@
 {
-  "name": "AllInOneSDK",
+  "name": "AllInOneSDKPlugin",
   "version": "0.0.1",
-  "description": "plugin for paytm payment gateway integration",
+  "description": "capacitor plugin for paytm all in one payment gateway",
   "main": "dist/plugin.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -37,7 +37,7 @@
     "dist/",
     "ios/",
     "android/",
-    "AllInOneSDK.podspec"
+    "AllInOneSDKPlugin.podspec"
   ],
   "keywords": [
     "capacitor",
@@ -56,9 +56,9 @@
   "swiftlint": "@ionic/swiftlint-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tushar-harde/paytm-allinonesdk-capacitor.git"
+    "url": "https://github.com/ZimbaroosGeeks/paytm-allinonesdk-capacitor.git"
   },
   "bugs": {
-    "url": "https://github.com/tushar-harde/paytm-allinonesdk-capacitor.git/issues"
+    "url": "https://github.com/ZimbaroosGeeks/paytm-allinonesdk-capacitor.git/issues"
   }
 }
