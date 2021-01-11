@@ -1,7 +1,7 @@
 {
-  "name": "AllInOneSDKPlugin",
+  "name": "capacitor-paytm-allinonesdk",
   "version": "0.0.1",
-  "description": "capacitor plugin for paytm all in one payment gateway",
+  "description": "capacitor plugin for paytm payment gateway",
   "main": "dist/plugin.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -37,7 +37,7 @@
     "dist/",
     "ios/",
     "android/",
-    "AllInOneSDKPlugin.podspec"
+    "CapacitorPaytmAllinonesdk.podspec"
   ],
   "keywords": [
     "capacitor",

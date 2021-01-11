@@ -1,4 +1,4 @@
-package in.zimbaroos.plugins.AllInOneSDKPlugin;
+package in.zimbaroosgeeks.paytmAllinonesdk;
 
 import com.getcapacitor.JSObject;
 import com.getcapacitor.NativePlugin;
@@ -7,7 +7,7 @@ import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 
 @NativePlugin
-public class AllInOneSDKPlugin extends Plugin {
+public class AllInOneSDK extends Plugin {
 
     @PluginMethod
     public void echo(PluginCall call) {
