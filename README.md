@@ -7,9 +7,9 @@ capacitor plugin for paytm payment gateway
 
 2. import import **in.zimbaroosgeeks.paytmAllinonesdk.AllInOneSDK; ** and add ** add(AllInOneSDK.class);** to the init function of **MainActivity.java** located at project-root/android/app/src/main/java/**your-package-name**
 
-3. Add the line below to ‘repositories’ section of your project-root/android/build.gradle.
-  maven {
-    url "https://artifactory.paytm.in/libs-release-local"
+3. Add the line below to ‘repositories’ section of your project-root/android/build.gradle. <br />
+  maven { <br />
+    url "https://artifactory.paytm.in/libs-release-local"<br />
   }
   
 4. Add the line below to 'dependencies' section of your project-root/android/app/build.gradle.
