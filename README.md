@@ -1,4 +1,4 @@
-# paytm-allinonesdk-capacitor
+# capacitor-paytm-allinonesdk
 capacitor plugin for paytm payment gateway
 
 # Steps to install capacitor-paytm-allinonesdk plugin for android
