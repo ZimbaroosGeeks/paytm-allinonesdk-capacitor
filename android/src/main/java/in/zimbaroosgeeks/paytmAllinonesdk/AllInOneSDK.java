@@ -13,13 +13,13 @@ import com.paytm.pgsdk.PaytmOrder;
 import com.paytm.pgsdk.PaytmPaymentTransactionCallback;
 import com.paytm.pgsdk.TransactionManager;
 
-@NativePlugin(requestCodes = {AllInOneSDKPlugin.REQ_CODE})
+@NativePlugin(requestCodes = {AllInOneSDK.REQ_CODE})
 
 public class AllInOneSDK extends Plugin {
     protected static final int REQ_CODE = 0;
 
     @PluginMethod
-    public void startTransaction(PluginCall call) {
+    public void startTransaction(final PluginCall call) {
         saveCall(call);
         String orderId = call.getString("orderId");
         String mid = call.getString("mid");
@@ -75,8 +75,8 @@ public class AllInOneSDK extends Plugin {
             }
 
             @Override
-            public void onErrorLoadingWebPage(String inFailingUrl) {
-                setResult(inErrorMessage, call);
+            public void onErrorLoadingWebPage(int i, String s, String s1) {
+                setResult("Erro to load web page", call);
             }
 
             @Override
