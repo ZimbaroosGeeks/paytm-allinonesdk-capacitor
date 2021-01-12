@@ -17,19 +17,8 @@ capacitor plugin for paytm payment gateway
   
 # Steps to use capacitor-paytm-allinonesdk plugin
 
-1. import { Plugins } from '@capacitor/core';
-   import 'capacitor-paytm-allinonesdk';
+   import { Plugins } from '@capacitor/core'; <br />
+   import 'capacitor-paytm-allinonesdk'; <br />
    import { PaymentIntentModel } from 'capacitor-paytm-allinonesdk';
 
    const { AllInOneSDK } = Plugins;
-    
-2. create object of PaymentIntentModel
-
-3. call the startTransaction method
-   AllInOneSDK.startTransaction(transactionOptions)
-   .then(paymentResult => {
-     console.log(paymentResult);
-   })
-   .catch(err => {
-     console.error(err);
-   });
