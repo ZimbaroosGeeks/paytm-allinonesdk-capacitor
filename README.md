@@ -3,9 +3,12 @@ capacitor plugin for paytm payment gateway
 
 # Steps to install capacitor-paytm-allinonesdk plugin for android
 
-1. install plugin using **npm i capacitor-paytm-allinonesdk**
+1. install plugin using
+```
+  npm i capacitor-paytm-allinonesdk
+```
 
-2. import in.zimbaroosgeeks.paytmAllinonesdk.AllInOneSDK and add add(AllInOneSDK.class) to the init function of **MainActivity.java** located at project-root/android/app/src/main/java/**your-package-name**
+2. import **in.zimbaroosgeeks.paytmAllinonesdk.AllInOneSDK** and add **add(AllInOneSDK.class)** to the init function of **MainActivity.java** located at project-root/android/app/src/main/java/**your-package-name**
 
 3. Add the line below to ‘repositories’ section of your project-root/android/build.gradle.
   ```
