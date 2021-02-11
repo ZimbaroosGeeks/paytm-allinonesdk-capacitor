@@ -1,7 +1,7 @@
 {
   "name": "capacitor-paytm-allinonesdk",
   "version": "1.0.0",
-  "description": "Ionic capacitor plugin for integrating paytm payment gateway into ionic application.",
+  "description": "Ionic capacitor plugin for integrating paytm payment gateway into Ionic application.",
   "main": "dist/plugin.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
