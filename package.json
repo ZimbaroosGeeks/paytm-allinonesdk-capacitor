@@ -1,7 +1,7 @@
 {
   "name": "capacitor-paytm-allinonesdk",
-  "version": "0.0.4",
-  "description": "capacitor plugin for paytm payment gateway",
+  "version": "1.0.0",
+  "description": "Ionic capacitor plugin for integrating paytm payment gateway into ionic application.",
   "main": "dist/plugin.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -14,7 +14,7 @@
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
   },
-  "author": "Tushar Harde",
+  "author": "Zimbaroos Geeks",
   "license": "MIT",
   "devDependencies": {
     "@capacitor/android": "^2.4.5",
