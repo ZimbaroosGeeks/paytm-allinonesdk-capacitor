@@ -60,5 +60,8 @@
   },
   "bugs": {
     "url": "https://github.com/ZimbaroosGeeks/paytm-allinonesdk-capacitor.git/issues"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
