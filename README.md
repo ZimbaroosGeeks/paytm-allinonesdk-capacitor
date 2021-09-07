@@ -12,13 +12,20 @@ capacitor plugin for paytm payment gateway
 
 3. Add the line below to ‘repositories’ section of your project-root/android/build.gradle.
   ```
-  maven {
-    url "https://artifactory.paytm.in/libs-release-local"
+ allprojects {
+   repositories {
+       ...
+       maven {
+           url "https://artifactory.paytm.in/libs-release-local"
+       }
+    }
   }
   ```
   
 4. Add the line below to 'dependencies' section of your project-root/android/app/build.gradle.
+  ```
   implementation 'com.paytm.appinvokesdk:appinvokesdk:1.5.3'
+  ```
   
 # Steps to use capacitor-paytm-allinonesdk plugin
   ```
