@@ -12,8 +12,13 @@ capacitor plugin for paytm payment gateway
 
 3. Add the line below to ‘repositories’ section of your project-root/android/build.gradle.
   ```
-  maven {
-    url "https://artifactory.paytm.in/libs-release-local"
+ allprojects {
+   repositories {
+       ...
+       maven {
+           url "https://artifactory.paytm.in/libs-release-local"
+       }
+    }
   }
   ```
   
