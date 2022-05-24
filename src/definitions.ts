@@ -1,5 +1,5 @@
 declare module '@capacitor/core' {
-  interface PluginRegistry {
+  export interface PluginRegistry {
     AllInOneSDK: AllInOneSDKPlugin;
   }
 }

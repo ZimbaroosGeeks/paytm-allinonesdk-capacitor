@@ -13,7 +13,10 @@ import com.paytm.pgsdk.PaytmOrder;
 import com.paytm.pgsdk.PaytmPaymentTransactionCallback;
 import com.paytm.pgsdk.TransactionManager;
 
-@NativePlugin(requestCodes = {AllInOneSDK.REQ_CODE})
+@CapacitorPlugin(
+    name="AllInOneSDK"
+    // requestCodes = {AllInOneSDK.REQ_CODE}
+    )
 
 public class AllInOneSDK extends Plugin {
     protected static final int REQ_CODE = 0;
