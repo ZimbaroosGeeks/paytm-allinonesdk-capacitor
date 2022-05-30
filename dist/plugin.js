@@ -1,6 +1,11 @@
 var capacitorPlugin = (function (exports, core) {
     'use strict';
 
+    // export * from './definitions';
+    const AllInOneSDK = core.registerPlugin('AllInOneSDK', {
+        web: () => Promise.resolve().then(function () { return web; }).then(m => new m.AllInOneSDKWeb()),
+    });
+
     var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
         function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
         return new (P || (P = Promise))(function (resolve, reject) {
@@ -11,12 +16,12 @@ var capacitorPlugin = (function (exports, core) {
         });
     };
     class AllInOneSDKWeb extends core.WebPlugin {
-        constructor() {
-            super({
-                name: 'AllInOneSDK',
-                platforms: ['web'],
-            });
-        }
+        // constructor() {
+        //   super({
+        //     name: 'AllInOneSDK',
+        //     platforms: ['web'],
+        //   });
+        // }
         echo(options) {
             return __awaiter(this, void 0, void 0, function* () {
                 console.log('ECHO', options);
@@ -32,11 +37,19 @@ var capacitorPlugin = (function (exports, core) {
             });
         }
     }
-    const AllInOneSDK = new AllInOneSDKWeb();
-    core.registerWebPlugin(AllInOneSDK);
+    // const AllInOneSDK = new AllInOneSDKWeb();
+    // export { AllInOneSDK };
+    // import { registerWebPlugin } from '@capacitor/core';
+    // registerWebPlugin(AllInOneSDK);
+    // declare const AllInOneSDK: AllInOneSDKWeb;
+    // export {AllInOneSDK}
+
+    var web = /*#__PURE__*/Object.freeze({
+        __proto__: null,
+        AllInOneSDKWeb: AllInOneSDKWeb
+    });
 
     exports.AllInOneSDK = AllInOneSDK;
-    exports.AllInOneSDKWeb = AllInOneSDKWeb;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

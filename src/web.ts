@@ -1,13 +1,18 @@
 import { WebPlugin } from '@capacitor/core';
-import { AllInOneSDKPlugin, PaymentIntentModel, PaytmResponse } from './definitions';
+
+import type{
+  AllInOneSDKPlugin, PaymentIntentModel, PaytmResponse
+} from './definitions';
+
+
 
 export class AllInOneSDKWeb extends WebPlugin implements AllInOneSDKPlugin {
-  constructor() {
-    super({
-      name: 'AllInOneSDK',
-      platforms: ['web'],
-    });
-  }
+  // constructor() {
+  //   super({
+  //     name: 'AllInOneSDK',
+  //     platforms: ['web'],
+  //   });
+  // }
 
   async echo(options: { value: string }): Promise<{ value: string }> {
     console.log('ECHO', options);
@@ -22,9 +27,12 @@ export class AllInOneSDKWeb extends WebPlugin implements AllInOneSDKPlugin {
   }
 }
 
-const AllInOneSDK = new AllInOneSDKWeb();
+// const AllInOneSDK = new AllInOneSDKWeb();
 
-export { AllInOneSDK };
+// export { AllInOneSDK };
 
-import { registerWebPlugin } from '@capacitor/core';
-registerWebPlugin(AllInOneSDK);
+// import { registerWebPlugin } from '@capacitor/core';
+// registerWebPlugin(AllInOneSDK);
+
+// declare const AllInOneSDK: AllInOneSDKWeb;
+// export {AllInOneSDK}

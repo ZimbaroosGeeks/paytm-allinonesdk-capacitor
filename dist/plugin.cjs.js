@@ -1,4 +1,15 @@
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var core = require('@capacitor/core');
+
+// export * from './definitions';
+const AllInOneSDK = core.registerPlugin('AllInOneSDK', {
+    web: () => Promise.resolve().then(function () { return web; }).then(m => new m.AllInOneSDKWeb()),
+});
+
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -7,8 +18,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import { WebPlugin } from '@capacitor/core';
-export class AllInOneSDKWeb extends WebPlugin {
+class AllInOneSDKWeb extends core.WebPlugin {
     // constructor() {
     //   super({
     //     name: 'AllInOneSDK',
@@ -36,4 +46,11 @@ export class AllInOneSDKWeb extends WebPlugin {
 // registerWebPlugin(AllInOneSDK);
 // declare const AllInOneSDK: AllInOneSDKWeb;
 // export {AllInOneSDK}
-//# sourceMappingURL=web.js.map
+
+var web = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    AllInOneSDKWeb: AllInOneSDKWeb
+});
+
+exports.AllInOneSDK = AllInOneSDK;
+//# sourceMappingURL=plugin.cjs.js.map

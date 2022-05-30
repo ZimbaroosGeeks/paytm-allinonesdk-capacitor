@@ -1,11 +1,11 @@
-declare module '@capacitor/core' {
-  export interface PluginRegistry {
-    AllInOneSDK: AllInOneSDKPlugin;
-  }
-}
+// declare module '@capacitor/core' {
+//   interface PluginRegistry {
+//     AllInOneSDK: AllInOneSDKPlugin;
+//   }
+// }
 
 export interface AllInOneSDKPlugin {
-  startTransaction(options : PaymentIntentModel): Promise<PaytmResponse>
+  startTransaction(options : PaymentIntentModel): Promise<PaytmResponse>;
 }
 
 /**
