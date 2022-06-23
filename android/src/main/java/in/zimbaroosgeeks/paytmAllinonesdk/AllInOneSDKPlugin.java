@@ -4,18 +4,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
+
 import com.getcapacitor.JSObject;
-import com.getcapacitor.NativePlugin;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
+import com.getcapacitor.annotation.CapacitorPlugin;
 import com.paytm.pgsdk.PaytmOrder;
 import com.paytm.pgsdk.PaytmPaymentTransactionCallback;
 import com.paytm.pgsdk.TransactionManager;
 
 @CapacitorPlugin(
-    name="AllInOneSDK"
-    // requestCodes = {AllInOneSDK.REQ_CODE}
+    name="AllInOneSDK",
+    requestCodes = {AllInOneSDK.REQ_CODE}
     )
 
 public class AllInOneSDKPLugin extends Plugin {
@@ -23,8 +24,8 @@ public class AllInOneSDKPLugin extends Plugin {
     protected static final int REQ_CODE = 0;
 
     @PluginMethod
-    public void startTransaction(final PluginCall call) {
-        saveCall(call);
+    public void startTransaction(PluginCall call) {
+        // saveCall(call);
         String orderId = call.getString("orderId");
         String mid = call.getString("mid");
         String txnToken = call.getString("txnToken");
